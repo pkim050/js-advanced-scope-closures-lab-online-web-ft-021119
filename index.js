@@ -1,8 +1,10 @@
 function produceDrivingRange(range) {
   return function(beginning, end) {
-    const distance = end - beginning;
-    console.log(range);
-
+    const begInt = parseInt(beginning, 10);
+    const endInt = parseInt(end, 10);
+    console.log(begInt);
+    console.log(endInt);
+    const distance = endInt - begInt;
     const check = Math.abs(range - distance);
     if (distance <= range) {
       return `within range by ${check}`;
